@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="resetstyle.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Travel blog</title>
+  </head>
+
+  <body>
+    <!---------------------------HEADER + NAVBAR-------------------------------------------->
+    <header>
+      <div class="travelblog">
+        <h1><i class="far fa-compass fa-2x"></i>Travelblog.com</h1>
+
+        <h4>Racontez-nous vos plus beaux souvenirs</h4>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <ul class="menu">
+        <li>Destinations</li>
+        <li>Itinéraires et cicruits</li>
+        <li>Top 10 articles</li>
+        <li>Poster un article</li>
+      </ul>
+    </nav>
+    <nav id="navbar">
+      <div id="hamburgerAndTitle">
+        <i id="hamburger" class="fas fa-bars fa-2x"></i>
+        <h2 id="navbarTitle"><i class="far fa-compass"></i> travelblog.com</h2>
+      </div>
+      <div id="navigationLinks">
+        <a href="index.html">Destinations</a>
+        <a href="index.html">Itinéraires et circuits</a>
+        <a href="index.html">Top 10 articles</a>
+        <a href="index.html">Poster un article</a>
+      </div>
+    </nav>
+    <!---------------------------A LA UNE-------------------------------------------->
+    <section id="alaune">
+      <div id="bali">
+        <i class="fas fa-globe-americas fa-3x"></i>
+
+        <h2>A la une</h2>
+        <div id="barrealaune"></div>
+        <h1>Bali</h1>
+
+        <blockquote>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.<br />
+
+          <cite
+            ><img src="images/users/emilie.jpg" alt="Témoignage Emilie" /> par
+            Emilie</cite
+          >
+        </blockquote>
+        <button class="lecture">Lire l'article</button>
+      </div>
+    </section>
+    <!---------------------------ASIDE-------------------------------------------->
+    <aside>
+      <div id="titreaside">
+        <i class="fas fa-map-marked-alt fa-2x"></i>
+        <h2>Les + populaires</h2>
+        <div id="barreaside"></div>
+      </div>
+
+      <div id="populaire">
+        <blockquote>
+          <p>#1 <i class="fas fa-star">4.7/5</i></p>
+          <h2>Une semaine a Santorini</h2>
+          <cite
+            ><img
+              src="images/users/Steven79.jpg"
+              alt="Steven79"
+              class="users"
+            />
+            Steven79<i class="fas fa-calendar"></i>24/02/2021</cite
+          >
+        </blockquote>
+        <img
+          src="images/destination1.jpg"
+          alt="destination1"
+          class="asideimage"
+        />
+        <button class="lecture">Lire l'article</button>
+      </div>
+
+      <div id="populaire">
+        <blockquote>
+          <p>#2 <i class="fas fa-star">4.6/5</i></p>
+          <h2>Séjour de rêve a Miami</h2>
+          <cite
+            ><img src="images/users/emma2021.jpg" alt="Emma" class="users" />
+            Emma2021<i class="fas fa-calendar"></i>03/02/2021</cite
+          >
+        </blockquote>
+        <img src="images/miami.jpg" alt="miami" class="asideimage" />
+        <button class="lecture">Lire l'article</button>
+      </div>
+
+      <div id="populaire">
+        <blockquote>
+          <p>#3 <i class="fas fa-star">4.3/5</i></p>
+          <h2>L.A., Here i come !</h2>
+          <cite
+            ><img src="images/users/julia.jpg" alt="Julia" class="users" />
+            Julia<i class="fas fa-calendar"></i>15/02/2021</cite
+          >
+        </blockquote>
+        <img src="images/losangeles.jpg" alt="losangeles" class="asideimage" />
+        <button class="lecture">Lire l'article</button>
+      </div>
+
+      <div id="populaire">
+        <blockquote>
+          <p>#4 <i class="fas fa-star">4.2/5</i></p>
+          <h2>Les Maldives à la folie</h2>
+          <cite
+            ><img
+              src="images/users/johanna84.jpg"
+              alt="Johanna84"
+              class="users"
+            />
+            Johanna84<i class="fas fa-calendar"></i>27/12/2021</cite
+          >
+        </blockquote>
+        <img src="images/maldives.jpg" alt="maldives" class="asideimage" />
+        <button class="lecture">Lire l'article</button>
+      </div>
+
+      <div id="populaire">
+        <blockquote>
+          <p>#5 <i class="fas fa-star">4.2/5</i></p>
+          <h2>Week-end à Toronto</h2>
+          <cite
+            ><img
+              src="images/users/nathalie.jpg"
+              alt="Nathalie"
+              class="users"
+            />
+            Nathalie<i class="fas fa-calendar"></i>11/03/2021</cite
+          >
+        </blockquote>
+
+        <img src="images/toronto.jpg" alt="toronto" class="asideimage" />
+        <button class="lecture">Lire l'article</button>
+      </div>
+
+      <button class="lecture">Classement complet</button>
+    </aside>
+    <!---------------------------ARTICLES-------------------------------------------->
+    <article id="articleintro">
+      <span class="titrearticle">
+        <i class="fas fa-clock fa-2x" style="color: #2b80b9"></i>
+
+        <h2>Derniers articles</h2>
+
+        <div id="barrearticle"></div>
+      </span>
+      <div id="lieux">
+        <img src="images/montreal.jpg" alt="montreal" class="miniature" />
+        <img src="images/sydney.jpg" alt="sydney" class="miniature" />
+        <img src="images/rio.jpg" alt="rio" class="miniature" />
+      </div>
+      <button class="lecture">Tous les articles</button>
+    </article>
+
+    <article id="articleun">
+      <div id="barrearticle"></div>
+      <h2>Découverte de Montréal</h2>
+      <cite>
+        <img src="images/users/emma2021.jpg" alt="Emma" class="users" />
+        Emma2021
+        <i class="fas fa-clock fa-1x" style="color: #2b80b9"></i>12/03/2021 -
+        10h20</cite
+      >
+
+      <img src="images/montreal.jpg" alt="montreal" class="grandeimage" />
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown. Lorem Ipsum is simply dummy text of
+        the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown
+      </p>
+      <button class="lecture">Lire l'article</button>
+    </article>
+
+    <article id="articledeux">
+      <div id="barrearticle"></div>
+      <h2>Escapade a Sydney</h2>
+      <cite>
+        <img src="images/users/Steven79.jpg" alt="Steven79" class="users" />
+        Steven79
+        <i class="fas fa-clock fa-1x" style="color: #2b80b9"></i>11/03/2021 -
+        14h27</cite
+      >
+
+      <img src="images/sydney.jpg" alt="sydney" class="grandeimage" />
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown. Lorem Ipsum is simply dummy text of
+        the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown
+      </p>
+      <button class="lecture">Lire l'article</button>
+    </article>
+
+    <article id="articletrois">
+      <div id="barrearticle"></div>
+      <h2>En route pour Rio !</h2>
+      <cite>
+        <img src="images/users/julia.jpg" alt="Julia" class="users" />
+        Julia
+        <i class="fas fa-clock fa-1x" style="color: #2b80b9"></i>11/03/2021 -
+        9h32</cite
+      >
+
+      <img src="images/rio.jpg" alt="rio" class="grandeimage" />
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown. Lorem Ipsum is simply dummy text of
+        the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown
+      </p>
+      <button class="lecture">Lire l'article</button>
+      <div id="barrearticle"></div>
+    </article>
+    <!---------------------------AVION-------------------------------------------->
+    <section id="avion">
+      <div id="texteavion">
+        <i class="fas fa-plane-departure fa-3x" style="color: #2b80b9"></i>
+
+        <h2>Nos partenaires</h2>
+        <div id="barreavion"></div>
+        <p>
+          PROMO : bénéficiez de 10% de réduction avec le code : travelblog2021
+        </p>
+      </div>
+    </section>
+    <!---------------------------PARTENAIRES-------------------------------------------->
+    <section id="partenaires">
+      <div class="icones">
+        <p>Grid Airlines <img src="images/company1.png" alt="company1" /></p>
+        <p>
+          World Air Company <img src="images/company2.png" alt="company2" />
+        </p>
+        <p>Sky Masters <img src="images/company3.png" alt="company3" /></p>
+      </div>
+    </section>
+    <!---------------------------FOOTER-------------------------------------------->
+    <footer id="reseaux">
+      <p>© 2021 Travelblog.com</p>
+      <p></p>
+      <ul class="social">
+        <li>
+          <a href="#Facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+        </li>
+        <li>
+          <a href="#Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+        </li>
+        <li>
+          <a href="#invision"><i class="fab fa-invision fa-2x"></i></a>
+        </li>
+        <li>
+          <a href="#Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+        </li>
+      </ul>
+    </footer>
+
+    <!-------------------------------JAVASCRIPT------------------------------------>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // au clic sur hamburger, afficher ou masquer le menu (en responsive)
+        $("#hamburger").on("click", function () {
+          if ($("#navigationLinks").css("display") == "none") {
+            $("#navigationLinks").css("display", "block");
+            $("#navigationLinks").css("display", "grid");
+          } else {
+            $("#navigationLinks").css("display", "none");
+          }
+        });
+
+        // afficher le menu quand on passe en taille desktop (même s'il est masqué)
+        window.addEventListener("resize", () => {
+          let width = window.innerWidth;
+          if (width > 1080) {
+            $("#navigationLinks").css("display", "block");
+            $("#navigationLinks").css("display", "grid");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

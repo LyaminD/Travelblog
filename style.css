@@ -1,0 +1,586 @@
+body {
+  font-family: "RocknRoll One", sans-serif;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 35vw 1fr;
+  grid-template-rows: 60vh 15vh 140vh repeat(4, max-content) 70vh 30vh 20vh;
+  grid-template-areas: "header header" "navbar navbar" "alaune alaune" "aside articleintro" "aside articleun" "aside articledeux" "aside articletrois" "avion avion" "partenaires partenaires" "reseaux reseaux";
+  text-align: center;
+}
+
+cite {
+  display: flex;
+}
+/*-------- BOUTONS-----------*/
+
+button {
+  display: block;
+  background-color: #f2f7ba;
+  color: #2b80b9;
+  border-radius: 5px;
+  line-height: 30px;
+  margin: 0 auto;
+  transition: 0.3;
+}
+
+button:hover {
+  background: #02b8dd;
+}
+
+.lecture {
+  display: block;
+  background-color: #f2f7ba;
+  color: #2b80b9;
+  border-radius: 5px;
+  line-height: 30px;
+  margin: 0 auto;
+  transition: 0.3;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.lecture:hover {
+  background: #02b8dd;
+}
+
+h1 {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+h2 {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+/*-----------------NAVBAR---------------------------------*/
+
+header {
+  grid-area: header;
+  display: grid;
+  background-image: linear-gradient(
+      rgba(116, 230, 214, 0.4),
+      rgba(250, 247, 48, 0.3)
+    ),
+    url(images/beach.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #f2f7ba;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.travelblog {
+  justify-self: center;
+  align-self: center;
+  margin-top: 30vh;
+  color: #fff;
+}
+
+.travelblog h1 {
+  font-size: 3rem;
+}
+
+/*-------------A la Une-----------------------------*/
+
+#alaune {
+  grid-area: alaune;
+  background-image: linear-gradient(
+      rgba(116, 230, 214, 0.4),
+      rgba(250, 247, 48, 0.3)
+    ),
+    url(images/bali.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+#alaune h2 {
+  font-weight: bold;
+}
+
+#bali {
+  color: #fff;
+  background-color: #2b80b9;
+  display: flex;
+  width: 40vw;
+  height: 55%;
+  margin-left: 60px;
+  margin-top: 300px;
+  padding-left: 10px;
+  border-radius: 15px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#bali img {
+  clip-path: ellipse(50% 50%);
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  filter: brightness(1.2);
+}
+
+#bali h1 {
+  font-size: 3rem;
+}
+
+#bali cite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#barrebali {
+  height: 3px;
+  background-color: #2b80b9;
+  width: 70%;
+  text-align: center;
+  bottom: 30px;
+  font-size: 0;
+}
+/*-------------------------Aside---------------------------------*/
+
+#barreaside {
+  height: 3px;
+  background-color: #fff;
+  width: 40%;
+  text-align: center;
+  bottom: 30px;
+  font-size: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #2b80b9;
+  color: #fff;
+  display: flex;
+}
+
+#titreaside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  line-height: 50px;
+}
+
+#titreaside h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+aside h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#populaire {
+  border-radius: 10px;
+  border: 1px #fff solid;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+blockquote p {
+  justify-content: space-around;
+}
+
+.asideimage {
+  width: 20vw;
+  height: 13vw;
+  border: 3px #fff solid;
+}
+
+.asideimage {
+  -webkit-filter: contrast(75%);
+}
+
+.asideimage:hover {
+  -webkit-filter: contrast(150%);
+}
+/*-------------------------Articles---------------------------------*/
+article p {
+  width: 60vw;
+  padding-top: 20px;
+}
+.miniature {
+  width: 15vw;
+  height: 10vw;
+  -webkit-filter: contrast(75%);
+}
+
+.miniature:hover {
+  -webkit-filter: contrast(150%);
+}
+
+.grandeimage {
+  width: 35vw;
+  -webkit-filter: contrast(75%);
+}
+
+.grandeimage:hover {
+  -webkit-filter: contrast(150%);
+}
+
+#articleintro {
+  margin-top: 10px;
+  grid-area: articleintro;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  place-items: center center;
+}
+
+#articleun {
+  grid-area: articleun;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  place-items: center center;
+}
+
+#articledeux {
+  grid-area: articledeux;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  place-items: center center;
+}
+
+#articletrois {
+  grid-area: articletrois;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  place-items: center center;
+}
+
+article h2 {
+  color: #2b80b9;
+  font-size: 1.7em;
+}
+
+.titrearticle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.users {
+  clip-path: ellipse(50% 50%);
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  filter: brightness(1.2);
+}
+/*-----------------Avion----------------------------*/
+
+#avion {
+  grid-area: avion;
+  background-image: linear-gradient(
+      rgba(116, 230, 214, 0.4),
+      rgba(250, 247, 48, 0.3)
+    ),
+    url(images/plane.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#texteavion {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#texteavion h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: #2b80b9;
+  margin-top: 30px;
+}
+
+#barreavion {
+  height: 3px;
+  background-color: #f2f7ba;
+  width: 20%;
+  text-align: center;
+  bottom: 30px;
+  font-size: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/*-------------------partenaires-------------------------*/
+
+#partenaires {
+  grid-area: partenaires;
+  background-color: #2b80b9;
+}
+
+.icones {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.icones img {
+  height: 10vh;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.icones img:hover {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+/*-------------------footer-------------------------*/
+
+#reseaux {
+  color: #2b80b9;
+  grid-area: reseaux;
+  background-color: #f2f7ba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#reseaux ul {
+  display: flex;
+  margin-top: 20px;
+}
+
+#reseaux a {
+  margin-left: 20px;
+  color: #02b8dd;
+}
+
+#reseaux a:hover {
+  color: #fff;
+}
+/*----------------MEDIA QUERRIES-------------------------------*/
+/* 1) règles communes aux mobiles + tablettes */
+
+@media screen and (max-width: 991px) {
+  #hamburger {
+    color: #2b80b9;
+    display: block;
+    text-align: left;
+    margin: 20px 20px;
+  }
+
+  #navbarTitle {
+    display: block;
+    margin: 20px 40px;
+  }
+
+  #hamburgerAndTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hamburgerAndTitle h2 {
+    margin: 0 auto;
+    margin-top: 23px;
+  }
+
+  nav {
+    width: 100vw;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f2f7ba;
+    opacity: 90%;
+    color: #02b8dd;
+  }
+
+  #navigationLinks {
+    padding-bottom: 20px;
+  }
+
+  #barreaside {
+    width: 50%;
+  }
+
+  #barreavion {
+    width: 50%;
+  }
+  #barrearticle {
+    width: 50%;
+  }
+}
+/* 2) mobiles uniquement */
+
+@media screen and (max-width: 767px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 50vh 100vh auto;
+    grid-template-areas: "header" "alaune" "articleintro" "articleun" "articledeux" "articletrois" "aside" "avion" "partenaires" "reseaux";
+    text-align: center;
+  }
+
+  #alaune {
+    background-attachment: unset;
+    justify-content: center;
+    display: flex;
+  }
+  h1 {
+    font-size: 2em !important;
+  }
+  h2 {
+    font-size: 1.3em !important;
+  }
+  #lieux {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .miniature {
+    padding-top: 10px;
+    width: 70vw;
+    height: 20vh;
+  }
+
+  .grandeimage {
+    width: 70vw;
+  }
+
+  .asideimage {
+    width: 99%;
+    height: auto;
+  }
+
+  #avion {
+    height: 50vh;
+  }
+
+  .icones {
+    flex-direction: column;
+  }
+
+  #bali {
+    display: flex;
+    width: 70vw;
+    height: 40vh;
+    border-radius: 15px;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  article p {
+    width: 80vw;
+    padding-top: 20px;
+  }
+  #alaune {
+    justify-content: flex-start;
+  }
+}
+
+/* 3) tablettes uniquement */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40vh 100vh auto;
+    grid-template-areas: "header header" "alaune alaune" "aside articleintro" "aside articleun" "aside articledeux" "aside articletrois" "avion avion" "partenaires partenaires" "reseaux reseaux";
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2em !important;
+  }
+
+  h2 {
+    font-size: 1.3em !important;
+  }
+
+  #lieux {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .miniature {
+    padding-top: 10px;
+    width: 30vw;
+    height: 20vh;
+  }
+
+  .asideimage {
+    width: 90%;
+    height: auto;
+  }
+
+  #avion {
+    height: 50vh;
+  }
+
+  article p {
+    width: 40vw;
+    padding-top: 20px;
+  }
+
+  #bali {
+    width: 50vw;
+    height: 50vh;
+    border-radius: 15px;
+    flex-direction: column;
+  }
+  #alaune {
+    justify-content: flex-start;
+  }
+}
+
+
+
+
+
+
+
+
+/*----------------------
+
+
+
+grid pour les compagnies
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------*/
